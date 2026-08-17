@@ -1,0 +1,9 @@
+{
+  "name": "aimsv2",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "dev:server": "pnpm --dir apps/server dev",
+    "build": "pnpm -r build"
+  }
+}

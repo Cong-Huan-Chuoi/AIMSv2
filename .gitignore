@@ -1,0 +1,55 @@
+# 1. Thư viện và Dependencies (Quan trọng nhất)
+node_modules/
+.pnpm-store/
+
+# 2. File môi trường - Chứa biến bảo mật (Tuyệt đối không push lên Git)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+# (Cho phép push file mẫu để mọi người trong team biết cần cấu hình những biến nào)
+!.env.example
+
+# 3. Thư mục chứa code sau khi Build
+dist/
+build/
+out/
+.next/
+
+# 4. Bộ nhớ đệm của TypeScript (Giúp build nhanh hơn nhưng không cần commit)
+*.tsbuildinfo
+
+# 5. Cơ sở dữ liệu nội bộ (Nếu bạn dùng SQLite với Prisma để test)
+*.db
+*.db-journal
+
+# 6. File Log (Ghi lỗi)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 7. File rác của hệ điều hành
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 8. File cấu hình cá nhân của phần mềm Editor (VS Code, WebStorm,...)
+.idea/
+.history/
+.vscode/*
+# (Giữ lại các file cấu hình chung nếu team muốn dùng chung rules của VS Code)
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# 9. Công cụ kiểm tra code (Coverage)
+coverage/
+.nyc_output/
