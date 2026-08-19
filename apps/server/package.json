@@ -1,6 +1,7 @@
 {
   "name": "@aimsv2/server",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend server for AIMSv2",
   "main": "src/index.ts",
   "scripts": {
@@ -15,11 +16,14 @@
   "packageManager": "pnpm@10.33.0",
   "dependencies": {
     "@aimsv2/shared": "workspace:*",
+    "@apollo/server": "^5.5.1",
+    "@as-integrations/express5": "^1.1.2",
     "@prisma/client": "^7.9.1",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "graphql": "16",
     "jsonwebtoken": "^9.0.3",
     "zod": "^4.4.3"
   },
