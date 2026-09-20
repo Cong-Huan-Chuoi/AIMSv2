@@ -250,7 +250,7 @@ model users {
   user_search_tsv Unsupported("tsvector")? 
   session         session[]
   social_account  social_account[]
-  user_roles      user_roles[]
+  roles      user_roles[]
 
   @@index([user_search_tsv], map: "idx_users_search_tsv", type: Gin)
 }
